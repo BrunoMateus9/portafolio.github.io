@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:ital,wght@0,100;0,300;0,900;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: grid;
+    background-color: #1d2242;
+    /*grid-template-columns: repeat(8, 1fr);*/
+    align-items: center;
+}
+.navbar .logo{
+    width: 31px;
+    height: 56px;
+    margin-left: 50px;
+    margin-block: 8px;
+}
+.navbar .menu{
+    grid-column: 6/8;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.navbar .menu a:hover{
+    padding: 5px 10px;
+    background-color: aliceblue;
+    border-radius: 9px;
+    color: #1d2242;
+    transition: ease-in 0.2s;
+    font-weight: 600;
+}
+/*SECTION MAIN */
+.main{
+    margin: 0px auto;
+    height: 200px;
+    background-image: linear-gradient( rgb(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/background-made-from-bricks.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.main .info-content{
+    font-size: 28px;
+    justify-content: space-around;
+    font-family: 'Montserrat';
+}
+span{
+    color: rgb(201, 8, 8);
+}
+.abaout{
+    margin: 0px auto;
+    height: 25px;
+    background-color: rgb(201, 8, 8);
+    box-shadow: inset 0px 0px 9px rgba(0, 0, 0);
+}
+.portafolio{
+    height: auto;
+    background-image: url(../img/black-brick-wall-background.jpg);
+    background-size: cover;
+}
+.proyecto-text{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 80px 80px;
+    height: 312px;
+}
+.proyecto-text h2{
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 40px;
+    padding: 30px;
+}
+.footer{
+    background-color: #1d2242;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}

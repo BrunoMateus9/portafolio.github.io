@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:ital,wght@0,100;0,300;0,900;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: grid;
+    background-color: #1d2242;
+    /*grid-template-columns: repeat(8, 1fr);*/
+    align-items: center;
+}
+.navbar .logo{
+    width: 31px;
+    height: 56px;
+    margin-left: 50px;
+    margin-block: 8px;
+}
+.navbar .menu{
+    grid-column: 6/8;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.navbar .menu a:hover{
+    padding: 5px 10px;
+    background-color: aliceblue;
+    border-radius: 9px;
+    color: #1d2242;
+    transition: ease-in 0.2s;
+    font-weight: 600;
+}
+/*SECTION MAIN */
+.abaout{
+    margin: 0px auto;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center; 
+    background-color: rgb(201, 8, 8);
+    column-gap: 50px;
+}
+.portafolio{
+    padding: 50px;
+    gap: 20px;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2)), url(../img/dirty-pattern-paint-room-block.jpg);
+    background-size: cover;
+    color: #000000;
+    box-shadow: inset 0px 0px 30px black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-auto-flow: column;
+}
+.portafolio img{
+    border: 8px solid #1d2242;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.050) , rgba(255, 255, 255, 0.050)), url(../img/red-and-black-brush-stroke-banner-background-perfect-for-canva.jpg);
+    background-size: 400px 500px;
+    width: 353px;
+    margin: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0);
+    grid-area: 7/6 / 1/7;
+}
+.info-content{
+    font-size: 28px;
+    justify-content: space-around;
+    font-family: 'Montserrat';
+    grid-area: 4/2 / 3/6;
+}
+span{
+    color: rgb(201, 8, 8);
+}
+.btn{
+    padding: 8px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: grid; 
+}
+a{
+    grid-area: 5/2 / 4/6;
+    text-decoration: none;
+}
+.b1{
+    background-color: #1d2242;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 21px;
+    margin-top: 13px;
+    color: aliceblue;
+}
+.btn:hover{
+    background-color: #ffffff;
+    color: #1d2242;
+    border: 3px solid;
+    transition: ease-in 0.2s;
+
+}
+.footer{
+    background-color: #1d2242;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
